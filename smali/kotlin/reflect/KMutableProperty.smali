@@ -1,0 +1,19 @@
+.class public interface abstract Lkotlin/reflect/KMutableProperty;
+.super Ljava/lang/Object;
+.source "KProperty.kt"
+
+# interfaces
+.implements Lkotlin/reflect/KProperty;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "<R:",
+        "Ljava/lang/Object;",
+        ">",
+        "Ljava/lang/Object;",
+        "Lkotlin/reflect/KProperty<",
+        "TR;>;"
+    }
+.end annotation

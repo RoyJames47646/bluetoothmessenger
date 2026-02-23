@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/rv_contacts" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <TextView android:gravity="center" android:layout_gravity="center" android:id="@id/tv_no_contacts" android:visibility="gone" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:text="@string/contact_chooser__no_contacts" />
+</FrameLayout>

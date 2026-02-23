@@ -1,0 +1,163 @@
+.class final Lcom/glodanif/bluetoothchat/di/ApplicationModuleKt$applicationModule$1$4;
+.super Lkotlin/jvm/internal/Lambda;
+.source "ApplicationModule.kt"
+
+# interfaces
+.implements Lkotlin/jvm/functions/Function1;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/glodanif/bluetoothchat/di/ApplicationModuleKt$applicationModule$1;->invoke(Lorg/koin/dsl/context/ModuleDefinition;)V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x18
+    name = null
+.end annotation
+
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Lkotlin/jvm/internal/Lambda;",
+        "Lkotlin/jvm/functions/Function1<",
+        "Lorg/koin/core/parameter/ParameterList;",
+        "Lcom/glodanif/bluetoothchat/ui/presenter/ImagePreviewPresenter;",
+        ">;"
+    }
+.end annotation
+
+.annotation system Ldalvik/annotation/SourceDebugExtension;
+    value = "SMAP\nApplicationModule.kt\nKotlin\n*S Kotlin\n*F\n+ 1 ApplicationModule.kt\ncom/glodanif/bluetoothchat/di/ApplicationModuleKt$applicationModule$1$4\n+ 2 ModuleDefinition.kt\norg/koin/dsl/context/ModuleDefinition\n+ 3 KoinContext.kt\norg/koin/core/KoinContext\n*L\n1#1,45:1\n185#2,6:46\n57#3,8:52\n*E\n*S KotlinDebug\n*F\n+ 1 ApplicationModule.kt\ncom/glodanif/bluetoothchat/di/ApplicationModuleKt$applicationModule$1$4\n*L\n22#1,6:46\n22#1,8:52\n*E\n"
+.end annotation
+
+
+# instance fields
+.field final synthetic $this_module:Lorg/koin/dsl/context/ModuleDefinition;
+
+
+# direct methods
+.method constructor <init>(Lorg/koin/dsl/context/ModuleDefinition;)V
+    .locals 0
+
+    iput-object p1, p0, Lcom/glodanif/bluetoothchat/di/ApplicationModuleKt$applicationModule$1$4;->$this_module:Lorg/koin/dsl/context/ModuleDefinition;
+
+    const/4 p1, 0x1
+
+    invoke-direct {p0, p1}, Lkotlin/jvm/internal/Lambda;-><init>(I)V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public final invoke(Lorg/koin/core/parameter/ParameterList;)Lcom/glodanif/bluetoothchat/ui/presenter/ImagePreviewPresenter;
+    .locals 11
+
+    const-string v0, "params"
+
+    invoke-static {p1, v0}, Lkotlin/jvm/internal/Intrinsics;->checkParameterIsNotNull(Ljava/lang/Object;Ljava/lang/String;)V
+
+    const/4 v0, 0x0
+
+    .line 22
+    invoke-virtual {p1, v0}, Lorg/koin/core/parameter/ParameterList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/Number;
+
+    invoke-virtual {v0}, Ljava/lang/Number;->longValue()J
+
+    move-result-wide v2
+
+    const/4 v0, 0x1
+
+    invoke-virtual {p1, v0}, Lorg/koin/core/parameter/ParameterList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    move-object v4, v0
+
+    check-cast v4, Ljava/io/File;
+
+    const/4 v0, 0x2
+
+    invoke-virtual {p1, v0}, Lorg/koin/core/parameter/ParameterList;->get(I)Ljava/lang/Object;
+
+    move-result-object p1
+
+    move-object v5, p1
+
+    check-cast v5, Lcom/glodanif/bluetoothchat/ui/view/ImagePreviewView;
+
+    iget-object p1, p0, Lcom/glodanif/bluetoothchat/di/ApplicationModuleKt$applicationModule$1$4;->$this_module:Lorg/koin/dsl/context/ModuleDefinition;
+
+    .line 48
+    invoke-static {}, Lorg/koin/core/parameter/ParameterListKt;->emptyParameterDefinition()Lkotlin/jvm/functions/Function0;
+
+    move-result-object v0
+
+    .line 51
+    invoke-virtual {p1}, Lorg/koin/dsl/context/ModuleDefinition;->getKoinContext()Lorg/koin/core/KoinContext;
+
+    move-result-object p1
+
+    .line 52
+    invoke-virtual {p1}, Lorg/koin/core/KoinContext;->getInstanceRegistry()Lorg/koin/core/instance/InstanceRegistry;
+
+    move-result-object p1
+
+    .line 53
+    new-instance v1, Lorg/koin/core/instance/InstanceRequest;
+
+    .line 55
+    const-class v6, Lcom/glodanif/bluetoothchat/data/model/MessagesStorage;
+
+    invoke-static {v6}, Lkotlin/jvm/internal/Reflection;->getOrCreateKotlinClass(Ljava/lang/Class;)Lkotlin/reflect/KClass;
+
+    move-result-object v6
+
+    const-string v7, ""
+
+    const/4 v8, 0x0
+
+    .line 53
+    invoke-direct {v1, v7, v6, v8, v0}, Lorg/koin/core/instance/InstanceRequest;-><init>(Ljava/lang/String;Lkotlin/reflect/KClass;Lorg/koin/core/scope/Scope;Lkotlin/jvm/functions/Function0;)V
+
+    .line 52
+    invoke-virtual {p1, v1}, Lorg/koin/core/instance/InstanceRegistry;->resolve(Lorg/koin/core/instance/InstanceRequest;)Ljava/lang/Object;
+
+    move-result-object p1
+
+    .line 59
+    move-object v6, p1
+
+    check-cast v6, Lcom/glodanif/bluetoothchat/data/model/MessagesStorage;
+
+    .line 22
+    new-instance p1, Lcom/glodanif/bluetoothchat/ui/presenter/ImagePreviewPresenter;
+
+    const/4 v7, 0x0
+
+    const/16 v9, 0x30
+
+    const/4 v10, 0x0
+
+    move-object v1, p1
+
+    invoke-direct/range {v1 .. v10}, Lcom/glodanif/bluetoothchat/ui/presenter/ImagePreviewPresenter;-><init>(JLjava/io/File;Lcom/glodanif/bluetoothchat/ui/view/ImagePreviewView;Lcom/glodanif/bluetoothchat/data/model/MessagesStorage;Lkotlinx/coroutines/CoroutineDispatcher;Lkotlinx/coroutines/CoroutineDispatcher;ILkotlin/jvm/internal/DefaultConstructorMarker;)V
+
+    return-object p1
+.end method
+
+.method public bridge synthetic invoke(Ljava/lang/Object;)Ljava/lang/Object;
+    .locals 0
+
+    check-cast p1, Lorg/koin/core/parameter/ParameterList;
+
+    invoke-virtual {p0, p1}, Lcom/glodanif/bluetoothchat/di/ApplicationModuleKt$applicationModule$1$4;->invoke(Lorg/koin/core/parameter/ParameterList;)Lcom/glodanif/bluetoothchat/ui/presenter/ImagePreviewPresenter;
+
+    move-result-object p1
+
+    return-object p1
+.end method

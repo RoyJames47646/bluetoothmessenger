@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:id="@id/fab_go_down" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@color/colorAccent" app:backgroundTint="@android:color/white" app:fabSize="mini" app:srcCompat="@drawable/ic_arrow_downward" app:useCompatPadding="true" />
+    <TextView android:textSize="12.0sp" android:textColor="@android:color/white" android:layout_gravity="end" android:id="@id/tv_new_messages" android:background="@drawable/budge_unread_below" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="14.0dip" />
+</FrameLayout>

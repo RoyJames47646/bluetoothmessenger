@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.glodanif.bluetoothchat" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-feature android:name="android.hardware.bluetooth" android:required="true"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <application android:allowBackup="false" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:fullBackupContent="@xml/backup_descriptor" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.glodanif.bluetoothchat.ChatApplication" android:roundIcon="@mipmap/ic_launcher_round" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <activity android:name="com.glodanif.bluetoothchat.ui.activity.SplashActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="image/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.glodanif.bluetoothchat.ui.activity.ConversationsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/scan__scan" android:name="com.glodanif.bluetoothchat.ui.activity.ScanActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/chat__chat" android:name="com.glodanif.bluetoothchat.ui.activity.ChatActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden|adjustResize"/>
+        <activity android:label="@string/initial_setup__initial_setup" android:name="com.glodanif.bluetoothchat.ui.activity.ProfileActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:label="@string/settings__title" android:name="com.glodanif.bluetoothchat.ui.activity.SettingsActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/contact_chooser__title" android:name="com.glodanif.bluetoothchat.ui.activity.ContactChooserActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/images__image" android:name="com.glodanif.bluetoothchat.ui.activity.ImagePreviewActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/images__received_images" android:name="com.glodanif.bluetoothchat.ui.activity.ReceivedImagesActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/about__about" android:name="com.glodanif.bluetoothchat.ui.activity.AboutActivity" android:screenOrientation="portrait"/>
+        <service android:name="com.glodanif.bluetoothchat.data.service.BluetoothConnectionService"/>
+        <meta-data android:name="io.fabric.ApiKey" android:value="b26de0978fcc0fa56349d97da37b554f54e1d034"/>
+        <meta-data android:name="preloaded_fonts" android:resource="@array/preloaded_fonts"/>
+        <provider android:authorities="com.glodanif.bluetoothchat.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.glodanif.bluetoothchat.data.file.GenericFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <provider android:authorities="com.glodanif.bluetoothchat.lifecycle-process" android:exported="false" android:multiprocess="true" android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"/>
+        <provider android:authorities="com.glodanif.bluetoothchat.com.squareup.picasso" android:exported="false" android:name="com.squareup.picasso.PicassoProvider"/>
+        <provider android:authorities="com.glodanif.bluetoothchat.easyphotopicker.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="pl.aprilapps.easyphotopicker.ExtendedFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/easyimage_filepaths"/>
+        </provider>
+        <provider android:authorities="com.glodanif.bluetoothchat.crashlyticsinitprovider" android:exported="false" android:initOrder="90" android:name="com.crashlytics.android.CrashlyticsInitProvider"/>
+    </application>
+</manifest>

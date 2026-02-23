@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/settings__appearance" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <RelativeLayout android:id="@id/rl_chat_bg_color_button" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings__chat_background_color" android:layout_centerVertical="true" android:layout_marginEnd="16.0dip" android:layout_toStartOf="@id/v_color" android:layout_alignParentStart="true" />
+        <View android:id="@id/v_color" android:layout_width="36.0dip" android:layout_height="fill_parent" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/ll_night_mode_button" android:background="?android:selectableItemBackground" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="56.0dip" android:paddingStart="16.0dip" android:paddingEnd="16.0dip">
+        <TextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/settings__night_mode" />
+        <TextView android:textSize="12.0sp" android:id="@id/tv_night_mode" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:id="@id/tv_notifications_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/settings__notifications" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <com.glodanif.bluetoothchat.ui.widget.SwitchPreference android:id="@id/sp_sound" android:layout_width="fill_parent" android:layout_height="wrap_content" app:preferenceText="@string/settings__sound" />
+    <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorAccent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/settings__discovery" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" />
+    <com.glodanif.bluetoothchat.ui.widget.SwitchPreference android:id="@id/sp_class_filter" android:layout_width="fill_parent" android:layout_height="wrap_content" app:preferenceText="@string/settings__classification" />
+</LinearLayout>

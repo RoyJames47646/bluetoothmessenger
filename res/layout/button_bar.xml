@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:id="@id/negative_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_negative" style="?buttonBarNegativeButtonStyle" />
+    <Button android:id="@id/positive_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/button_positive" style="?buttonBarPositiveButtonStyle" />
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="general__time_days_ago">
+        <item quantity="other">%d днів назад</item>
+        <item quantity="one">%d день назад</item>
+        <item quantity="few">%d дні назад</item>
+        <item quantity="many">%d днів назад</item>
+    </plurals>
+    <plurals name="general__time_hours_ago">
+        <item quantity="other">%d годин назад</item>
+        <item quantity="one">%d годину назад</item>
+        <item quantity="few">%d години назад</item>
+        <item quantity="many">%d годин назад</item>
+    </plurals>
+    <plurals name="general__time_minutes_ago">
+        <item quantity="other">%d хвилину назад</item>
+        <item quantity="one">%d хвилину назад</item>
+        <item quantity="few">%d хвилини назад</item>
+        <item quantity="many">%d хвилин назад</item>
+    </plurals>
+</resources>

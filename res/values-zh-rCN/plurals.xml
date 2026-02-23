@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="general__time_days_ago">
+        <item quantity="other">%d 天前</item>
+    </plurals>
+    <plurals name="general__time_hours_ago">
+        <item quantity="other">%d 小时前</item>
+    </plurals>
+    <plurals name="general__time_minutes_ago">
+        <item quantity="other">%d 分钟前</item>
+    </plurals>
+</resources>
